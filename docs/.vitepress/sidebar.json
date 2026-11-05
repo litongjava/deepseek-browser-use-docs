@@ -1,0 +1,190 @@
+[
+  {
+    "text": "入门",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "deepseek-browser-use：从入门到源码",
+        "link": "/guide"
+      },
+      {
+        "text": "deepseek-browser-use：概念与学习路线",
+        "link": "/01"
+      },
+      {
+        "text": "安装、启动与健康检查",
+        "link": "/02"
+      },
+      {
+        "text": "第一个任务：打开页面、读取结果与关闭",
+        "link": "/03"
+      },
+      {
+        "text": "客户端：dsb 命令行与结构化留档",
+        "link": "/03_client"
+      },
+      {
+        "text": "dsb 客户端：Go 版本、多目标与后端服务管理",
+        "link": "/37"
+      }
+    ]
+  },
+  {
+    "text": "使用",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "统一命令接口与人机协作",
+        "link": "/04"
+      },
+      {
+        "text": "浏览器、profile 与登录态",
+        "link": "/05"
+      },
+      {
+        "text": "浏览器 profile：列表、克隆与选择",
+        "link": "/39"
+      },
+      {
+        "text": "窗口尺寸与页面视口",
+        "link": "/06"
+      },
+      {
+        "text": "接入智能体：观察、执行与验证",
+        "link": "/07"
+      },
+      {
+        "text": "表单与多层弹窗排障：防止重复提交",
+        "link": "/08"
+      },
+      {
+        "text": "调用追踪、页面留档与文件上传",
+        "link": "/09"
+      },
+      {
+        "text": "站点配方、技能与异步作业",
+        "link": "/10"
+      },
+      {
+        "text": "Windows OCR：本地图片与页面文字识别",
+        "link": "/11"
+      },
+      {
+        "text": "配置项与运维自省",
+        "link": "/12"
+      },
+      {
+        "text": "命令清单",
+        "link": "/13"
+      },
+      {
+        "text": "可靠的数据采集：上下文校验、UTF-8 留档与证据口径",
+        "link": "/38"
+      },
+      {
+        "text": "页面正在导航与主 Frame 缺失：PAGE_NAVIGATING",
+        "link": "/36"
+      },
+      {
+        "text": "后端自动管理：安装 Java 与 Git、更新源码、编译和启动",
+        "link": "/35"
+      }
+    ]
+  },
+  {
+    "text": "原理与源码",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "正文提取与上层结构化处理",
+        "link": "/17"
+      },
+      {
+        "text": "DOM 原理：前端如何生成可交互快照",
+        "link": "/15"
+      },
+      {
+        "text": "DOM 原理：Java 模型与跨 Frame 索引",
+        "link": "/16"
+      },
+      {
+        "text": "源码教程：从 HTTP 请求到命令执行",
+        "link": "/14"
+      },
+      {
+        "text": "源码教程：生命周期、导航与页签",
+        "link": "/18"
+      },
+      {
+        "text": "源码教程：DOM、页面状态与元素读取",
+        "link": "/19"
+      },
+      {
+        "text": "源码教程：点击、输入、键盘与鼠标",
+        "link": "/20"
+      },
+      {
+        "text": "源码教程：等待条件与 JavaScript 执行",
+        "link": "/21"
+      },
+      {
+        "text": "源码教程：文件上传、截图、PDF 与 OCR",
+        "link": "/22"
+      },
+      {
+        "text": "源码教程：Cookie、存储与页面设置",
+        "link": "/23"
+      },
+      {
+        "text": "源码教程：网络记录、请求拦截与控制台",
+        "link": "/24"
+      },
+      {
+        "text": "源码教程：原生对话框、DOM 弹窗与人机协作",
+        "link": "/25"
+      },
+      {
+        "text": "源码教程：批量、配方、后台作业与维护",
+        "link": "/26"
+      },
+      {
+        "text": "源码教程：Chrome 走 CDP 与 CDP 客户端",
+        "link": "/27"
+      },
+      {
+        "text": "请求响应关联与线程约束",
+        "link": "/28"
+      }
+    ]
+  },
+  {
+    "text": "DeepSeek Harness 插件",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "DeepSeek Harness 插件开发入门：从入口到第一个工具",
+        "link": "/29"
+      },
+      {
+        "text": "开发 dsh-plugin-deepseek-browser-use：HTTP 客户端与基础工具",
+        "link": "/30"
+      },
+      {
+        "text": "开发 dsh-plugin-deepseek-browser-use：会话、作业、文件与图片",
+        "link": "/31"
+      },
+      {
+        "text": "把 dsh-plugin-deepseek-browser-use 构建并安装到 DeepSeek Harness",
+        "link": "/32"
+      },
+      {
+        "text": "DeepSeek Harness 原生浏览器插件：安装、配置与使用",
+        "link": "/33"
+      },
+      {
+        "text": "DeepSeek Harness 原生浏览器插件：源码、生命周期与测试",
+        "link": "/34"
+      }
+    ]
+  }
+]
