@@ -49,13 +49,21 @@ export default defineConfig({
       ["meta", { property: "og:image", content: `${siteUrl}/logo.png` }],
       ["meta", { name: "twitter:title", content: title }],
       ["meta", { name: "twitter:description", content: description }],
+      ...(isHome ? [] : [["link", { rel: "alternate", type: "text/markdown", href: "/ai/pages/" + encodeURI(pageData.relativePath) }]]),
       ["script", { type: "application/ld+json" }, JSON.stringify({
         "@context": "https://schema.org",
         "@type": isHome ? "WebSite" : "TechArticle",
-        [isHome ? "name" : "headline"]: title,
+        [isHome ? "name" : "headline"]: isHome ? siteName : pageData.title,
         description,
         url,
         inLanguage: "zh-CN",
+        ...(pageData.lastUpdated ? { dateModified: new Date(pageData.lastUpdated).toISOString() } : {}),
+        author: { "@type": "Organization", name: "IO Nexus", url: "https://io.nexus/" },
+        publisher: { "@type": "Organization", name: "IO Nexus", url: "https://io.nexus/" },
+        ...(isHome ? {} : {
+          isPartOf: { "@type": "WebSite", name: siteName, url: siteUrl + "/" },
+          encoding: { "@type": "MediaObject", encodingFormat: "text/markdown", contentUrl: siteUrl + "/ai/pages/" + encodeURI(pageData.relativePath) },
+        }),
       }).replaceAll("<", "\\u003c")],
     );
   },
